@@ -1,0 +1,35 @@
+# zsh exa plugin
+
+Small zsh plugin to add useful aliases for [exa](https://github.com/ogham/exa).
+
+## Get it
+
+Install exa, [check here](https://github.com/ogham/exa#installation) for platform specific installation instructions.
+
+Clone `zsh-exa` to your `$ZSH_CUSTOM` plugins directory.
+
+```bash
+git clone https://github.com/RitchieS/zsh-exa.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-exa
+```
+
+Then add `zsh-exa` to your plugins array in your zshrc.
+
+```bash
+plugins=(.. zsh-exa)
+```
+
+## What it do
+
+```bash
+# Group directories first, show icons, and enable file size color scale
+alias ls='exa --group-directories-first --icons --color-scale' # --time-style=iso
+alias lt='exa --tree --level=2 --icons' # Show in tree view
+alias l='ls -a'                         # Short, all files
+alias ld='l -D'                         # Short, only directories
+alias ll='ls -lbG --git'                # Long, file size prefixes, grid, git status
+alias la='ll -a'                        # Long, all files
+alias lC='la --sort=changed'            # Long, sort changed
+alias lM='la --sort=modified'           # Long, sort modified
+alias lS='la --sort=size'               # Long, sort size
+alias lX='la --sort=extension'          # Long, sort extension
+```
