@@ -4,7 +4,8 @@ Small zsh plugin to add useful aliases for [exa](https://github.com/ogham/exa).
 
 ## Get it
 
-Install exa, [check here](https://github.com/ogham/exa#installation) for platform specific installation instructions.
+Install exa, for platform specific [installation instructions](https://github.com/ogham/exa#installation).
+You will also need a patched font with powerline icons. I recommend using one of the [nerd-fonts](https://github.com/ryanoasis/nerd-fonts).
 
 Clone `zsh-exa` to your `$ZSH_CUSTOM` plugins directory.
 
